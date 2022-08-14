@@ -105,6 +105,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2370216153666271029, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554744746115935112, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_MinVertexDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554744746115935112, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554744746115935112, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_Parameters.colorGradient.atime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554744746115935112, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554744746115935112, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime0
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2755856561787629618, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
       propertyPath: m_RootOrder
       value: 0
