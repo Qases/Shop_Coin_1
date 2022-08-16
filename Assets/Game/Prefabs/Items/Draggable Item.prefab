@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -6405737580939018671}
   - component: {fileID: 2287926134900520220}
   - component: {fileID: 1584471119466960831}
+  - component: {fileID: 7587490647665992427}
+  - component: {fileID: -4740718737065004897}
   m_Layer: 0
   m_Name: Draggable Item
   m_TagString: Untagged
@@ -66,6 +68,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upForce: 150
   _type: 0
+  OnHideRequest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7587490647665992427}
+        m_TargetAssemblyTypeName: SortItems.ItemHideFX, Assembly-CSharp
+        m_MethodName: Hide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2287926134900520220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +109,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _circleClickFXPrefab: {fileID: 5699575042208062175, guid: 11b3f2b2753fe8e4aba707d64dab59e7, type: 3}
+--- !u!114 &7587490647665992427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755856561787629646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0d92ba0ab36b1439f14843affb2a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vfxPoolProvider: {fileID: -4740718737065004897}
+--- !u!114 &-4740718737065004897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755856561787629646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b8883a899a83043984fb167db7f8aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vfxPool: {fileID: 11400000, guid: ee52923cf0aa50d4d892ddfcd7e6b222, type: 2}
 --- !u!1 &5774816316310751565
 GameObject:
   m_ObjectHideFlags: 0

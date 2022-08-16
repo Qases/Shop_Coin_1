@@ -1,18 +1,20 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 namespace SortItems
 {
     public class DragItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
         [SerializeField] private float upForce = 50f;
+        [SerializeField] private ItemType _type;
+
+        public UnityEvent OnHideRequest;
      
         private Rigidbody _rigidbody;
 
         public bool isDraggable { get; private set; }
-
-        [SerializeField] private ItemType _type;
-
+     
         public ItemType Type { get => _type; }
 
         private void Start() 
@@ -22,34 +24,41 @@ namespace SortItems
 
         public void OnDrag(PointerEventData eventData)
         {
-            if (isDraggable == false)
-                return;
+            if (!isDraggable) return;
 
-            if (!eventData.pointerCurrentRaycast.isValid)
+            if (eventData.pointerCurrentRaycast.isValid)
             {
-                _rigidbody.isKinematic = false;
-                isDraggable = false;
+                var pos = eventData.pointerCurrentRaycast.worldPosition;
+                var delta = pos - transform.position;
+                delta.y = 0;
 
-                return;
+                transform.position += delta;
             }
-            var pos = eventData.pointerCurrentRaycast.worldPosition;
-            var delta = pos - transform.position;
-            delta.y = 0;
-
-            transform.position += delta;
+            else
+            {
+                DropItem();
+            }
+            
         }
 
         public void OnPointerDown(PointerEventData eventData)
+        {
+            PickItem();
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            DropItem();
+        }
+
+        private void PickItem()
         {
             _rigidbody.isKinematic = true;
             isDraggable = true;
         }
 
-        public void OnPointerUp(PointerEventData eventData)
+        private void DropItem()
         {
-            if (isDraggable == false)
-                return;
-                
             _rigidbody.isKinematic = false;
             _rigidbody.AddForce(Vector3.up * upForce);
             isDraggable = false;

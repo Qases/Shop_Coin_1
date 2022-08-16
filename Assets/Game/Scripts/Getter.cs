@@ -91,17 +91,15 @@ namespace SortItems
         {
             if (_item.Type == type)
             {
-                Destroy(_item.gameObject);
                 count++;
-
                 onCountChanged.Invoke(this);
-
+                _item.OnHideRequest.Invoke();
                 if (count >= targetCount)
                 {
                     _material.color = Color.magenta;
                     active = false;
                 }
-
+                                
             }
                 
         }
