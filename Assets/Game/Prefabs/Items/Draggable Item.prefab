@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7587490647665992427}
   - component: {fileID: -2856731954153634628}
   - component: {fileID: -4740718737065004897}
+  - component: {fileID: -821072250251829762}
   m_Layer: 0
   m_Name: Draggable Item
   m_TagString: Untagged
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd07715ea6916744ae7cc9df06b02ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 150
+  upForce: 100
   _type: 0
   OnHideRequest:
     m_PersistentCalls:
@@ -110,6 +111,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _vfxPoolProvider: {fileID: -2856731954153634628}
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -821072250251829762}
+        m_TargetAssemblyTypeName: SortItems.ItemAnimateColor, Assembly-CSharp
+        m_MethodName: Animation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7587490647665992427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +139,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _vfxPoolProvider: {fileID: -4740718737065004897}
+  OnHide:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -821072250251829762}
+        m_TargetAssemblyTypeName: SortItems.ItemAnimateColor, Assembly-CSharp
+        m_MethodName: Animation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: red
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-2856731954153634628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +180,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _vfxPool: {fileID: 11400000, guid: ee52923cf0aa50d4d892ddfcd7e6b222, type: 2}
+--- !u!114 &-821072250251829762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755856561787629646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 167883ca119332143ba2c42921d58b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destinationColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
+  _meshRenderer: {fileID: 0}
+  _animationTime: 0.3
 --- !u!1 &5774816316310751565
 GameObject:
   m_ObjectHideFlags: 0

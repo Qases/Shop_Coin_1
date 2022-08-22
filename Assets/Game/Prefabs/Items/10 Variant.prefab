@@ -109,6 +109,14 @@ PrefabInstance:
       propertyPath: _type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -821072250251829762, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: _meshRenderer
+      value: 
+      objectReference: {fileID: 5250363463511723602}
+    - target: {fileID: 2370216153666271029, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2755856561787629618, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
       propertyPath: m_RootOrder
       value: 0

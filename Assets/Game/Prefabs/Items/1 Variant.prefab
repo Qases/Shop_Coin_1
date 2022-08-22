@@ -105,6 +105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -821072250251829762, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
+      propertyPath: _meshRenderer
+      value: 
+      objectReference: {fileID: 6314268541114380424}
     - target: {fileID: 2370216153666271029, guid: 714b32661d0fe2d4e86bb6b966796699, type: 3}
       propertyPath: m_RootOrder
       value: 1
