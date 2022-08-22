@@ -14,6 +14,7 @@ namespace SortItems
             poolItem.ParticleSystem.Play();
 
             Destroy(this.gameObject);
+                        
         }
     }
 }

@@ -25,7 +25,7 @@ namespace SortItems
 
             if (count >= targetCount)
             {
-                _material.color = Color.magenta;
+                _material.color = Color.grey;
                 active = false;
             }
         }
@@ -91,12 +91,13 @@ namespace SortItems
         {
             if (_item.Type == type)
             {
+                _item.OnHideRequest.Invoke();
                 count++;
                 onCountChanged.Invoke(this);
-                _item.OnHideRequest.Invoke();
+                               
                 if (count >= targetCount)
                 {
-                    _material.color = Color.magenta;
+                    _material.color = Color.grey;
                     active = false;
                 }
                                 

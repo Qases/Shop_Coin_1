@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace SortItems
 {
@@ -13,26 +12,19 @@ namespace SortItems
 
         public void LoadNextLevel()
         {
-            Destroy(Lvl_Prev);
-            foreach(var _base in CoinBases)
-                Destroy (_base);
-            Lvl_Prev.SetActive(false);
-            Instantiate(Lvl_Next);        
-        }
-
-        
-
-        public void ReloadScene()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
-        private void Update() 
-        {
-            if (Input.GetKeyUp(KeyCode.R))
+            if (Lvl_Prev != null)
             {
-                ReloadScene();
+                Destroy(Lvl_Prev);
             }
+            if (CoinBases != null)
+            {
+                foreach(var _base in CoinBases)
+                //Destroy (_base);
+                _base.SetActive(false);
+            }
+            
+            //Lvl_Prev.SetActive(false);
+            Instantiate(Lvl_Next);        
         }
 
     }

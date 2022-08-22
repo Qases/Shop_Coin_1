@@ -24,7 +24,7 @@ namespace SortItems
             _items?.Clear();
             _queue?.Clear();
 
-
+           
             _items = new List<VFXPoolItem>(_size);
             _queue = new Queue<VFXPoolItem>();
 
@@ -38,8 +38,7 @@ namespace SortItems
 
         public void ResetPool()
         {
-            _poolIsInitialized = false;
-            
+                      
             _items.ForEach(item =>
             {
                 if (item != null && item.gameObject != null)
@@ -51,7 +50,7 @@ namespace SortItems
             _items.Clear();
             _queue.Clear();
 
-
+            _poolIsInitialized = false;
         }
 
         public VFXPoolItem GetFromPool()

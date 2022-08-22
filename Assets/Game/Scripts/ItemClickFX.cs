@@ -5,16 +5,16 @@ namespace SortItems
 {
     public class ItemClickFX : MonoBehaviour, IPointerDownHandler
     {
-        [SerializeField] private GameObject _circleClickFXPrefab;
-        //[SerializeField] private ParticlesPoolProvider _particlesPoolProvider;
+        //[SerializeField] private GameObject _circleClickFXPrefab;
+        [SerializeField] private VFXPoolProvider _vfxPoolProvider;
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            //ParticlesPoolItem itemInstance = _particlesPoolProvider.ParticlesPool.GetFromPool();
-            //itemInstance.transform.position = transform.position;
-            //itemInstance.ParticleSystem.Play();
+            VFXPoolItem poolItem = _vfxPoolProvider.VFXPool.GetFromPool();
+            poolItem.transform.position = transform.position;
+            poolItem.ParticleSystem.Play();
             
-            Instantiate(_circleClickFXPrefab, transform.position, Quaternion.identity, null);
+            //Instantiate(_circleClickFXPrefab, transform.position, Quaternion.identity, null);
         }
     }
 }
