@@ -30,6 +30,7 @@ namespace SortItems
 
             }
 
+
             _isAnimate = true;
 
             _elapsedTime = 0f;

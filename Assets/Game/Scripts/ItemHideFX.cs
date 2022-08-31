@@ -18,7 +18,7 @@ namespace SortItems
 
             OnHide.Invoke();
 
-            Destroy(this.gameObject,0.2f);
+            Destroy(this.gameObject,0.3f);
                         
         }
     }
