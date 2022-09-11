@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dacing Boy
+* source:	https://sketchfab.com/3d-models/dacing-boy-d5092c3efb0c4fc7ac78b0b0ad21372d
+* author:	T_Silver (https://sketchfab.com/T_Silver)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dacing Boy" (https://sketchfab.com/3d-models/dacing-boy-d5092c3efb0c4fc7ac78b0b0ad21372d) by T_Silver (https://sketchfab.com/T_Silver) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
