@@ -54,6 +54,7 @@
      <Compile Include="Assets\Game\Scripts\FXPool\VFXPoolItem.cs" />
      <Compile Include="Assets\Game\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabUI.cs" />
+     <Compile Include="Assets\Game\Scripts\Timer.cs" />
      <Compile Include="Assets\Sketchfab For Unity\Scripts\SketchfabImporter.cs" />
      <Compile Include="Assets\Game\Scripts\ItemClickFX.cs" />
      <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserManager.cs" />
@@ -71,7 +72,7 @@
      <Compile Include="Assets\Game\Scripts\AnimateVolumeWeight.cs" />
      <Compile Include="Assets\Game\Scripts\FXPool\VFXPoolProvider.cs" />
      <Compile Include="Assets\Sketchfab For Unity\Scripts\AssetBrowser\SketchfabBrowserWindow.cs" />
-     <Compile Include="Assets\Game\Scripts\Timer.cs" />
+     <Compile Include="Assets\Game\Scripts\DancerAnimation.cs" />
      <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFFlipTexture.shader" />
      <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFColorSpace.cginc" />
      <None Include="Assets\Sketchfab For Unity\Dependencies\Shaders\GLTFPackOccMetalRough.shader" />

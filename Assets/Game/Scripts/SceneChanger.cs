@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SortItems
 {
@@ -25,6 +26,11 @@ namespace SortItems
             
             //Lvl_Prev.SetActive(false);
             Instantiate(Lvl_Next);        
+        }
+
+        public void ReloadScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
     }
